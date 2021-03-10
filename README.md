@@ -1,1 +1,5 @@
-# 42-exam-02
+# Exam Rank 02
+
+The first exam of the new cursus.
+Subjects are in the folder of each exercises, along with a solution and a test file.
+Brillant code copied or inspired from @juanlamarao and @Glagan
