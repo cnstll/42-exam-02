@@ -95,12 +95,10 @@ int get_next_line(char **line)
 	if (n >= 0)
 	{
 		*line = ft_strndup(leftover, 0, n);
-		tmp = leftover;
-		leftover = ft_strndup(leftover, n + 1, c_in_s('\0', leftover));
-		free(tmp);
+		free(leftover);
 		return (1);
 	}
-	*line = ft_strndup(leftover, 0, 0);
+	*line = ft_calloc(1, sizeof(char));
 	free(leftover);
 	return (0);
 }
